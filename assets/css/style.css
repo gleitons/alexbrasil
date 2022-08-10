@@ -16,6 +16,12 @@ header {
     margin: auto;
     
 }
+.c-carousel__slide img{
+    width: 400px;
+    height: 300px;
+    margin: 5px;
+    padding: 5px;
+}
 .menuTop {
     display: flex;
     align-items: center;

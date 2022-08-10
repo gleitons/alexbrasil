@@ -13,7 +13,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
+    
+    
     <link rel="shortcut icon" href="/assets/img/alex-brasil-brasil.png" type="image/png">
     <meta property="og:url"                content="./" />
     <meta property="og:type"               content="article" />
@@ -205,6 +207,47 @@
             </section>
             
         </main> 
+        <div>
+            <div class="c-carousel__slides js-carousel--simple">
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-1.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-2.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-3.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-4.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-5.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-6.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-7.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-8.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-9.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-10.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-11.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-12.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-13.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-14.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-15.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-16.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-17.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-18.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-19.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-20.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-21.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-22.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-23.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-24.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-25.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-26.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-27.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-28.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-29.jpeg" alt=""></article>
+                <article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-30.jpeg" alt=""></article>
+
+                
+              </div>
+             
+              <button class="js-carousel--simple-prev">«</button>
+              <button class="js-carousel--simple-next">»</button>
+              <div class="js-carousel--simple-dots"></div>
+            </article>
+        </div>
         <div class="whats">
             <a href="https://api.whatsapp.com/send?phone=555196049336&text=Olá Alex Brasil, gostaria de realizar um orçamento com você, poderia me ajudar?" target="_blank"><img src="/assets/img/whatsapp-clique-aqui.png" alt=""></a>
 
@@ -218,7 +261,7 @@
                     <div id="menuB">
 
                     </div>            
-                        <!-- <img src="./assets/img/alex-brasil-oficial.png" alt="">                    -->
+                        <img src="./assets/img/alex-brasil-brasil.png" alt="">                   
                 </div>
                 <a href="https://api.whatsapp.com/send?phone=555196049336&text=Olá Alex Brasil, gostaria de realizar um orçamento com você, poderia me ajudar?" target="_blank">
                     <h2>(51) 99604-9336</h2>
@@ -226,11 +269,32 @@
                 
             </section>
         </footer> 
-
-        <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-        <script src="/assets/javascript/slider.js"></script>
+       
+1
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
         <script>
-        new Glide('.glide').mount();
+            for(let i=1; i < 3; i++) {
+            const imagem = `<article class="c-carousel__slide"><img src="./assets/img/alex-brasil-gondolas-${i}.jpeg" alt=""></article>`;
+            document.querySelector('#imgab').innerHTML = `${imagem}</br>`;
+            //console.log(i)
+            console.log(imagem)
+        }
+        </script>
+
+        <script>
+        var $simpleCarousel = document.querySelector(".js-carousel--simple");
+
+        new Glider($simpleCarousel, {
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        draggable: true,
+        dots: ".js-carousel--simple-dots",
+        arrows: {
+            prev: ".js-carousel--simple-prev",
+            next: ".js-carousel--simple-next",
+        },
+        });
+        
         </script>
 </body>
 </html>
