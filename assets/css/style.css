@@ -84,6 +84,15 @@ header {
     margin: auto;
     cursor: pointer;
 }
+.vouatender {
+    background-color: red;
+    color: rgb(240, 218, 21);
+    font-weight: 600;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
 .setor {
     text-align: center;
     width: 250px;
