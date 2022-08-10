@@ -16,11 +16,42 @@ header {
     margin: auto;
     
 }
+.c-carousel__slide {
+    margin-top: 25px;
+   
+}
+.btnVV {
+    width: 50px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #00000000;
+    border: #bcbcbc solid 1px;
+    box-shadow: rgba(0, 0, 0, 0.407) 0px 5px 10px 0px;
+    transition: 200ms;
+}
+.btnVV:hover {
+    background-color: #5d33336b;
+    cursor: pointer;
+}
+.btnVV:active {
+    background-color: #b60b0bae;
+    box-shadow: rgba(0, 0, 0, 0.407) 0px 0px 2px 0px, inset black 0px 5px 8px 0px;
+    font-size: 15px;
+}
+.carros h2{
+    margin-top: 10px;
+    text-align: center;
+}
 .c-carousel__slide img{
     width: 400px;
     height: 300px;
     margin: 5px;
     padding: 5px;
+   
+}
+.js-carousel--simple-dots {
+    margin-top: -30px;
 }
 .menuTop {
     display: flex;
@@ -200,6 +231,7 @@ form input{
 }
 .formContato {
     display: flex;
+    width: 100%;
 }
 .formulario {
     width: 80%;
@@ -374,6 +406,20 @@ footer {
     header {
         width: 100%;
         margin: auto;
+        
+    }
+    .js-carousel--simple-dots {
+        margin-top: 0px;
+    }
+    .formulario {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        /* border: black solid 1px; */
+    }
+    .formulario > input{
+        width: 360px;
+        
         
     }
     .dflex {
